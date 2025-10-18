@@ -18,30 +18,15 @@ document.querySelectorAll(".nav-item").forEach((btn) => {
 const canvas = document.getElementById("matrix-canvas");
 const c = canvas.getContext("2d");
 
-let w, h;
+let w, h, colWidth, charHeight, charsOnCol, colsPerLine;
 const fontHeight = 14;
 const fontFamily = "Meiryo, monospace";
 
-// Characters and symbols
-const numbers = "0123456789";
-const operators = "#+-\\/|=";
-const aboutMe = [
-  "Software Engineer",
-  "UI/UX Designer",
-  "Creative Developer",
-  "Problem Solver",
-  "Passionate Learner",
-];
+// Characters
 const cuteSymbols = "♡⋆˙⟡⟡ ݁₊ .°˖✧˖°⋆✩°˖✧˖°⋆༄˖°.ೃ࿔*:･";
-const katakana =
-  "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲ";
-const hiragana =
-  "あいうえおかきくけこがぎぐげごさしすせそざじずぜぞtたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわゐゑをん";
-
-// Choose which characters to use
 const alphabet = cuteSymbols;
 
-// Animation and matrix parameters
+// Animation parameters
 const spawnInterval = 500,
   density = 0.7,
   glitchInterval = 500,
@@ -56,8 +41,6 @@ const moveScale = 0.012,
 // =========================
 // UTILITY FUNCTIONS
 // =========================
-
-// Create a random glyph object
 function randomGlyph() {
   return {
     glyph: alphabet[Math.floor(Math.random() * alphabet.length)],
@@ -66,10 +49,9 @@ function randomGlyph() {
   };
 }
 
-// Initialize universe of glyphs
-const universe = Array.from({ length: 1000 }, () => randomGlyph());
+let universe = Array.from({ length: 1000 }, () => randomGlyph());
+let trails = [];
 
-// Set canvas size and character metrics
 function setCanvasExtents() {
   w = canvas.width = window.innerWidth;
   h = canvas.height = window.innerHeight;
@@ -84,14 +66,16 @@ function setCanvasExtents() {
   colsPerLine = Math.ceil(w / colWidth) || 1;
 }
 
-window.addEventListener("resize", setCanvasExtents);
+window.addEventListener("resize", () => {
+  setCanvasExtents();
+  trails = []; // Clear old trails on resize to prevent broken columns
+});
+
 setCanvasExtents();
 
 // =========================
 // TRAILS
 // =========================
-const trails = [];
-
 function makeTrail(col, maxSpeed = null, headAt = null) {
   let speed = speedBase + (Math.random() * speedDeviation * 2 - speedDeviation);
   if (maxSpeed && speed > maxSpeed) speed = maxSpeed;
@@ -145,7 +129,6 @@ function drawTrail(trail) {
   }
 }
 
-// Move trails down the screen
 function moveTrails(distance) {
   const remove = [];
   trails.forEach((t, i) => {
@@ -155,7 +138,6 @@ function moveTrails(distance) {
   while (remove.length > 0) trails.splice(remove.pop(), 1);
 }
 
-// Spawn new trails
 function spawnTrails() {
   const topTrailPerCol = [];
 
@@ -191,7 +173,6 @@ function spawnTrails() {
   }
 }
 
-// Glitch random glyphs in universe
 function glitchUniverse(count) {
   for (let i = 0; i < count; i++) {
     universe[Math.floor(Math.random() * universe.length)] = randomGlyph();
