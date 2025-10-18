@@ -177,7 +177,7 @@ html {
 /* subtle hover */
 .nav-item:hover {
   transform: translateY(-4px);
-  color: #111;
+  color: #ddd;
 }
 
 /* svg icon sizing & smoothing */
