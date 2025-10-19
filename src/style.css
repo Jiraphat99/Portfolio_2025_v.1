@@ -193,12 +193,144 @@ html {
   }
 }
 
-.about-left,
-.projects-left {
-  flex: 3;
+/* === GLOBAL GRID ALIGNMENT === */
+:root {
+  --page-padding: clamp(3rem, 7vw, 6rem);
+  --column-gap: 2rem;
 }
 
-.about-right,
-.projects-right {
-  flex: 1;
+section.about,
+section.projects {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
+.container-fluid,
+.project-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === ABOUT SECTION === */
+.about .row {
+  --bs-gutter-x: var(--column-gap);
+  align-items: center;
+}
+
+.about .col-lg-8 {
+  flex: 0 0 auto;
+  width: 66.6667%;
+  padding-right: 1.5rem;
+}
+
+.about .col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.3333%;
+  text-align: right;
+}
+
+.about .col-lg-4 p {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+.about .col-lg-4 .d-inline-flex {
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.about .col-lg-4 span.fw-regular {
+  display: inline-block;
+  text-align: right;
+}
+
+.about .col-lg-4 button.smallcircle-btn {
+  margin-left: 0;
+}
+
+.about .main-content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  max-width: 750px;
+}
+
+.description {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  max-width: 500px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: right;
+  opacity: 0.9;
+}
+
+/* === PROJECTS SECTION === */
+.projects .row.align-items-center {
+  --bs-gutter-x: var(--column-gap);
+  margin-bottom: 3rem;
+}
+
+.projects .text-center {
+  margin: 7rem;
+}
+
+.projects h1 {
+  margin-bottom: 3rem;
+}
+
+.projects .col-lg-8 {
+  width: 66.6667%;
+  padding-right: 1.5rem;
+}
+
+.projects .col-lg-4 {
+  width: 33.3333%;
+  text-align: right;
+}
+
+.projects h1 {
+  margin-bottom: 0.5rem;
+}
+
+.projects p {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  section.about,
+  section.projects {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .about .col-lg-8,
+  .about .col-lg-4,
+  .projects .col-lg-8,
+  .projects .col-lg-4 {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .about .col-lg-4,
+  .projects .col-lg-4 {
+    text-align: left !important;
+    margin-top: 1.5rem;
+  }
+
+  .about .col-lg-4 p,
+  .projects p {
+    margin-left: 0;
+    text-align: left !important;
+  }
 }
