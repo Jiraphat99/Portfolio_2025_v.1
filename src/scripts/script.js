@@ -1,15 +1,3 @@
-// small script to toggle 'active' state and aria-selected
-document.querySelectorAll(".nav-item").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".nav-item").forEach((n) => {
-      n.classList.remove("active");
-      n.setAttribute("aria-selected", "false");
-    });
-    btn.classList.add("active");
-    btn.setAttribute("aria-selected", "true");
-  });
-});
-
 const titles = [
   "Software Engineer",
   "UI/UX Designer",

@@ -13,48 +13,31 @@ html {
   overflow-y: auto;
 }
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%) blur(8px) brightness(60%);
-  transform: scale(1.1);
-  z-index: -1;
-}
-
 .hero-overlay {
-  position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
   height: 100%;
-  color: white;
 }
 
-.credit {
-  position: absolute;
-  top: 25px;
-  left: 40px;
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
-
+.credit,
 .description {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  max-width: 360px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  text-align: right;
-  opacity: 0.9;
+  position: static;
+  max-width: 40%;
+}
+
+@media (max-width: 992px) {
+  .hero-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .credit,
+  .description {
+    max-width: 100%;
+    text-align: left;
+  }
 }
 
 .main-title {
@@ -153,7 +136,6 @@ html {
     rgba(30, 30, 30, 0.9),
     rgba(60, 60, 60, 0.6)
   );
-  backdrop-filter: blur(12px);
   padding: 12px 18px;
   border-radius: 50px;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
@@ -299,7 +281,7 @@ html {
 /* ACTIVE BUTTON POP + GLOW */
 .nav-item.active {
   background: linear-gradient(135deg, #fff, #f0f0f0);
-  color: #111;
+  color: #000;
   transform: translateY(-2px) scale(1.2);
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3),
     0 0 12px rgba(255, 255, 255, 0.2);
@@ -324,52 +306,6 @@ section.projects {
   padding: 0;
 }
 
-/* === ABOUT SECTION === */
-.about .row {
-  --bs-gutter-x: var(--column-gap);
-  align-items: center;
-}
-
-.about .col-lg-8 {
-  flex: 0 0 auto;
-  width: 66.6667%;
-  padding-right: 1.5rem;
-}
-
-.about .col-lg-4 {
-  flex: 0 0 auto;
-  width: 33.3333%;
-  text-align: right;
-}
-
-.about .col-lg-4 p {
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: 0;
-  text-align: right;
-}
-
-.about .col-lg-4 .d-inline-flex {
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.about .col-lg-4 span.fw-regular {
-  display: inline-block;
-  text-align: right;
-}
-
-.about .col-lg-4 button.smallcircle-btn {
-  margin-left: 0;
-}
-
-.about .main-content p {
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
-  max-width: 750px;
-}
-
 .description {
   position: absolute;
   top: 25px;
@@ -384,8 +320,13 @@ section.projects {
 
 /* === PROJECTS SECTION === */
 
+.projects {
+  margin-bottom: 50px;
+}
+
 .project-title {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .arrow-circle {
@@ -425,8 +366,47 @@ section.projects {
   text-align: right;
 }
 
+.projects .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.projects .card {
+  flex: 1;
+
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projects .card img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.projects .card:hover {
+  transform: scale(1.05);
+}
+
+.project-title .arrow-circle {
+  width: 48px;
+  height: 48px;
+}
+
+.project-title span {
+  font-size: 2.5rem;
+}
+
+.project-title {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .projects h1 {
-  margin-bottom: 0.5rem;
+  margin-top: 12rem;
+  margin-bottom: 15rem;
 }
 
 .projects p {
@@ -435,6 +415,18 @@ section.projects {
   margin-right: 0;
   line-height: 1.6;
   text-align: left;
+}
+
+.projects .row.gx-4.gy-5 > .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-title span {
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* === RESPONSIVE === */
@@ -465,6 +457,7 @@ section.projects {
     text-align: left !important;
   }
 }
+
 /* === CONTACT SECTION RESPONSIVE === */
 
 .contact-section {
