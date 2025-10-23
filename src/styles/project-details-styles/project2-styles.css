@@ -1,0 +1,186 @@
+/* === CONTACT SECTION RESPONSIVE === */
+
+.contact-section {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
+.contact-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.divider-line {
+  position: relative;
+  height: 1px;
+  background-color: #111;
+  width: 100%;
+}
+
+.get-in-touch-btn {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  background-color: #3d5afe;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #455ce9;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.contact-info {
+  margin-top: 5rem;
+}
+
+.contact-info .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info p.small {
+  color: #888;
+}
+
+@media (max-width: 992px) {
+  .get-in-touch-btn {
+    right: 10%;
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
+  }
+
+  .contact-section h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
+
+.chaos-section {
+  min-height: 70vh;
+  padding: 6rem 5vw;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.chaos-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chaos-text .tagline {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 300;
+  color: #d1d1d1;
+  margin-bottom: 0.5rem;
+}
+
+.chaos-text .name {
+  font-size: clamp(10rem, 22vw, 18rem);
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+/* --- Button + Icon --- */
+.arrow-btn {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  background-color: #ddd;
+}
+
+/* Arrow styling */
+.arrow-icon {
+  width: 36px;
+  height: 36px;
+  fill: #000; /* solid black arrow */
+  transition: none; /* keeps it stable */
+}
+
+@media (max-width: 992px) {
+  .chaos-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .arrow-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .chaos-text .name {
+    font-size: clamp(3rem, 10vw, 6rem);
+  }
+}
+
+/* === CHAOS SECTION RESPONSIVE === */
+@media (max-width: 992px) {
+  .chaos-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .chaos-text .tagline {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+  }
+
+  .chaos-text .name {
+    font-size: clamp(3rem, 10vw, 6rem);
+  }
+
+  .arrow-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chaos-section {
+    padding: 4rem 1.5rem;
+    min-height: 60vh;
+  }
+}

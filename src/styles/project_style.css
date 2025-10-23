@@ -353,7 +353,8 @@ section.projects {
 }
 
 .projects h1 {
-  margin-bottom: 3rem;
+  margin-top: 12rem;
+  margin-bottom: 15rem;
 }
 
 .projects .col-lg-8 {
@@ -402,11 +403,6 @@ section.projects {
 .project-title {
   margin-top: 1rem;
   text-align: center;
-}
-
-.projects h1 {
-  margin-top: 12rem;
-  margin-bottom: 15rem;
 }
 
 .projects p {
