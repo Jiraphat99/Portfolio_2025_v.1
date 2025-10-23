@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page_title }} | Jirapat Wonganan</title>
+    <title>Project 1 | Jirapat Wonganan</title>
 
     <!-- Bootstrap + Global CSS -->
     <link
@@ -29,106 +29,170 @@
     </section>
 
     <!-- Page Content (injected per page) -->
-    <main>
-      <!-- DETAILS -->
-      <section class="project-content text-center text-md-start py-5">
-        <div class="container">
-          <h2>Overview</h2>
-          <p>
-            This project demonstrates modern UI/UX practices, performance
-            optimization, and fully responsive design using Bootstrap.
-          </p>
+    <main class="container">
+      <section class="projects py-5 bg-white">
+        <div class="container project-container">
+          <!-- Project Description -->
+          <div class="row align-items-start g-3 mb-5">
+            <div class="col-lg">
+              <h2 class="fw-semibold display-5 h5 mb-4">Overview</h2>
+              <p class="fs-5 text-muted mb-0">
+                A responsive e-commerce platform allowing users to browse,
+                order, and track products in real-time.
+              </p>
+              <br />
+              <p class="fs-5 text-muted mb-0">
+                My Role: Frontend Developer, UI/UX Designer
+              </p>
+              <br />
+              <p class="fs-5 text-muted mb-0">
+                Tools Used: ReactJS · Node.js · MongoDB · Bootstrap
+              </p>
+            </div>
+          </div>
 
-          <h2>Technologies Used</h2>
-          <p>HTML, CSS, JavaScript, Bootstrap, GSAP</p>
+          <div class="row align-items-start g-3 mb-5">
+            <div class="col-lg">
+              <h2 class="fw-semibold display-5 h5 mb-4">Highlights</h2>
+              <ul class="fs-5 text-muted mb-0">
+                <li>
+                  Implemented product filtering and search functionality with
+                  optimized performance.
+                </li>
+                <li>
+                  Designed responsive product pages for mobile and desktop
+                  devices.
+                </li>
+                <li>
+                  Integrated secure payment gateway APIs and order tracking
+                  features.
+                </li>
+                <li>
+                  Enhanced user experience with interactive animations and
+                  real-time updates.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <!-- GALLERY -->
-          <h2 class="text-center mt-5">Gallery</h2>
-          <div class="lightbox" data-mdb-lightbox-init>
-            <div class="row g-4">
-              <div class="col-12 col-md-6 col-lg-4">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                  alt="Table Full of Spices"
-                  class="img-fluid rounded-4"
-                  style="height: 300px; object-fit: cover"
-                />
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
-                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
-                  alt="Winter Landscape"
-                  class="img-fluid rounded-4"
-                  style="height: 300px; object-fit: cover"
-                />
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
-                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
-                  alt="View of the City in the Mountains"
-                  class="img-fluid rounded-4"
-                  style="height: 300px; object-fit: cover"
-                />
+      <!-- GALLERY SECTION -->
+      <section class="projects py-5">
+        <div class="container project-container">
+          <div class="row g-4">
+            <!-- Image 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                class="img-fluid rounded-4 gallery-img"
+                style="height: 300px; object-fit: cover; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                data-bs-slide-to="0"
+                alt="Table Full of Spices"
+              />
+            </div>
+            <!-- Image 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
+                class="img-fluid rounded-4 gallery-img"
+                style="height: 300px; object-fit: cover; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                data-bs-slide-to="1"
+                alt="Winter Landscape"
+              />
+            </div>
+            <!-- Image 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
+                class="img-fluid rounded-4 gallery-img"
+                style="height: 300px; object-fit: cover; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                data-bs-slide-to="2"
+                alt="View of the City in the Mountains"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="galleryModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+              <div
+                id="carouselGallery"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                      class="d-block w-100 rounded-4"
+                      alt="Table Full of Spices"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
+                      class="d-block w-100 rounded-4"
+                      alt="Winter Landscape"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
+                      class="d-block w-100 rounded-4"
+                      alt="View of the City in the Mountains"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselGallery"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselGallery"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Back Button -->
+      <div class="text-start mb-5 text-center">
+        <button class="back-btn" onclick="location.href='/web/projects.html'">
+          ← Back to Projects
+        </button>
+      </div>
     </main>
-
-    <!-- Contact + Chaos Sections -->
-    <section class="contact-section py-5 bg-white">
-      <div class="container-fluid contact-container">
-        <div class="row">
-          <div class="col-lg-8">
-            <p class="fs-4 text-muted mb-3">That's all for now.</p>
-            <h1 class="display-1 fw-semibold lh-1 mb-3">
-              Got a project in mind?
-            </h1>
-            <h1 class="display-1 fw-semibold lh-1 mb-5">Let’s talk</h1>
-          </div>
-        </div>
-
-        <div class="divider-line position-relative my-5">
-          <button class="get-in-touch-btn">Get in touch</button>
-        </div>
-
-        <div class="row contact-info text-muted">
-          <div class="col-md-3">
-            <p class="mb-1 small fw-semibold">Email:</p>
-            <p class="fs-5 text-dark">jiraphat_wonganan@outlook.com</p>
-          </div>
-          <div class="col-md-3">
-            <p class="mb-1 small fw-semibold">Phone</p>
-            <p class="fs-5 text-dark">(+91) 8248669086</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="chaos-section bg-black text-white py-5">
-      <div class="chaos-container">
-        <div class="chaos-text">
-          <p class="tagline">your friendly chaos creator</p>
-          <h1 class="name display-1">Jirapat</h1>
-        </div>
-        <a href="mailto:jiraphat_wonganan@outlook.com" class="arrow-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            class="arrow-icon"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708z"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
 
     <!-- Bottom centered nav -->
     <nav class="bottom-nav" aria-label="Primary">
@@ -305,7 +369,76 @@
       </div>
     </nav>
 
+    <!-- Contact Section -->
+    <section class="contact-section py-5 bg-white">
+      <div class="container-fluid contact-container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="fs-4 text-muted mb-3">That's all for now.</p>
+            <h1 class="display-1 fw-semibold lh-1 mb-3">
+              Got a project in mind?
+            </h1>
+            <h1 class="display-1 fw-semibold lh-1 mb-5">Let’s talk</h1>
+          </div>
+        </div>
+
+        <!-- Divider with circle button -->
+        <div class="divider-line position-relative my-5">
+          <button class="get-in-touch-btn">Get in touch</button>
+        </div>
+
+        <!-- Contact info -->
+        <div class="row contact-info text-muted">
+          <div class="col-md-3">
+            <p class="mb-1 small fw-semibold">Email:</p>
+            <p class="fs-5 text-dark">jiraphat_wonganan@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <p class="mb-1 small fw-semibold">Phone</p>
+            <p class="fs-5 text-dark">(+91) 8248669086</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="chaos-section bg-black text-white py-5">
+      <div class="chaos-container">
+        <div class="chaos-text">
+          <p class="tagline">your friendly chaos creator</p>
+          <h1 class="name display-1">Jirapat</h1>
+        </div>
+        <a
+          href="mailto:jiraphat_wonganan@outlook.com"
+          class="arrow-btn"
+          aria-label="Get in touch"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            class="arrow-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708z"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/src/scripts/script.js"></script>
+    <script>
+      // Ensure the clicked image opens the correct carousel slide
+      const galleryImages = document.querySelectorAll(".gallery-img");
+      galleryImages.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          const carousel = new bootstrap.Carousel(
+            document.getElementById("carouselGallery")
+          );
+          carousel.to(index);
+        });
+      });
+    </script>
   </body>
 </html>
