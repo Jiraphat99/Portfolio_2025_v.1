@@ -1,0 +1,42 @@
+.skills-table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+}
+
+.skills-table td {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  vertical-align: top;
+}
+
+.skills-table td.large {
+  height: 320px;
+  width: 50%;
+}
+
+.skills-table td.medium {
+  height: 240px;
+  width: 50%;
+}
+
+.skills-table td.small {
+  height: 180px;
+  width: 50%;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.badges span {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
