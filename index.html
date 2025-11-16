@@ -252,14 +252,34 @@
       fetch("/src/components/footerComponent.html")
         .then((res) => res.text())
         .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
-    <script>
+
       fetch("/src/components/navComponent.html")
         .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("nav-placeholder").innerHTML = data)
-        );
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          // NOW nav exists → run highlight
+          const current = window.location.pathname;
+
+          document.querySelectorAll(".bottom-nav .nav-item").forEach((item) => {
+            const href = item.getAttribute("href");
+
+            if (!href || href.startsWith("http")) return;
+
+            // Normalize paths
+            const cleanHref = href
+              .replace(/\/index\.html/, "/")
+              .replace(/\/$/, "");
+
+            const cleanCurrent = current
+              .replace(/\/index\.html/, "/")
+              .replace(/\/$/, "");
+
+            if (cleanCurrent === cleanHref) {
+              item.classList.add("active");
+            }
+          });
+        });
     </script>
   </body>
 </html>
