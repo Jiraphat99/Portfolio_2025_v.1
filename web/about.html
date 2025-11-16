@@ -24,7 +24,7 @@
         class="hero-bg position-absolute w-100 h-100 object-fit-cover"
       />
       <div
-        class="hero-overlay position-relative text-white h-100 d-flex flex-column justify-content-between"
+        class="hero-overlay position-relative text-black h-100 d-flex flex-column justify-content-between"
       >
         <p class="credit position-absolute fs-5 top-0 start-0 m-3">
           @ Code by Jirapat
@@ -35,7 +35,9 @@
           Passionate Creative Designer and Developer, dedicated to crafting
           innovative solutions and exceptional digital experiences.
         </p>
-        <h1 class="main-title text-center display-1 fw-bold">
+        <h1
+          class="main-title text-center fw-bold display-1 display-md-2 display-sm-3"
+        >
           <span id="loop-text">About Me</span>
         </h1>
         <button
@@ -171,7 +173,6 @@
         </div>
       </div>
     </section>
-
     <!-- Certifications Section -->
     <section class="py-5 bg-light">
       <div class="container-fluid">
@@ -179,38 +180,173 @@
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card shadow-sm rounded-4 p-4 text-center h-100">
-              <h3 class="fw-semibold mb-2">AWS Certified Developer</h3>
-              <p class="text-muted">Amazon Web Services, 2023</p>
+              <h3 class="fw-semibold mb-2">CompTIA Security+</h3>
+              <p class="text-muted">Global, 2024 (Planned)</p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card shadow-sm rounded-4 p-4 text-center h-100">
-              <h3 class="fw-semibold mb-2">Google UX Design</h3>
-              <p class="text-muted">Google, 2022</p>
+              <h3 class="fw-semibold mb-2">Cisco CyberOps Associate</h3>
+              <p class="text-muted">Cisco, 2024 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">Certified Ethical Hacker (CEH)</h3>
+              <p class="text-muted">EC-Council, 2024 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">CompTIA PenTest+</h3>
+              <p class="text-muted">Global, 2025 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">GIAC Security Essentials (GSEC)</h3>
+              <p class="text-muted">GIAC, 2025 (Planned)</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Award-Winning Projects Section -->
     <section class="py-5 bg-white">
       <div class="container-fluid">
-        <h1 class="display-1 fw-semibold mb-4">Selected Projects</h1>
+        <h1 class="display-1 fw-semibold mb-4">Award-Winning Projects</h1>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card rounded-4 shadow-sm">
-              <img
-                src="/src/assets/images/project1.jpg"
-                class="card-img-top"
-                alt="Project 1"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Portfolio Website</h3>
-                <p class="text-muted">HTML, CSS, JS, Bootstrap</p>
-                <a href="/web/projects.html" class="btn btn-primary btn-sm"
-                  >View Project</a
+          <!-- Project Cards -->
+          <div class="row gx-4 gy-5">
+            <!-- Project 1 -->
+            <div class="col-md-6 d-flex flex-column">
+              <a
+                href="/web/project-details/project1.html"
+                class="text-decoration-none text-dark"
+              >
+                <div class="card border-0 rounded-4">
+                  <img
+                    src="/src/assets/images/project1.jpg"
+                    class="card-img-top img-fluid"
+                    style="height: 320px; object-fit: cover"
+                    alt="Project One"
+                  />
+                </div>
+
+                <div
+                  class="d-flex align-items-center gap-3 mt-4 justify-content-center project-title"
                 >
+                  <svg
+                    class="arrow-circle"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
+                    <path
+                      d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                    />
+                  </svg>
+                  <span class="fw-semibold fs-2">Project One</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 d-flex flex-column">
+              <div class="card border-0 shadow-sm rounded-4">
+                <a
+                  href="/web/project-details/project2.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <img
+                    src="/src/assets/images/project2.jpg"
+                    class="card-img-top img-fluid"
+                    style="height: 320px; object-fit: cover"
+                    alt="Project One"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="d-flex align-items-center gap-3 mt-4 justify-content-center project-title"
+              >
+                <svg
+                  class="arrow-circle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 128 128"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                  />
+                </svg>
+                <span class="fw-semibold fs-2">Project Two</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 d-flex flex-column">
+              <div class="card border-0 shadow-sm rounded-4">
+                <a
+                  href="/web/project-details/project3.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <img
+                    src="/src/assets/images/project3.jpg"
+                    class="card-img-top img-fluid"
+                    style="height: 320px; object-fit: cover"
+                    alt="Project One"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="d-flex align-items-center gap-3 mt-4 justify-content-center project-title"
+              >
+                <svg
+                  class="arrow-circle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 128 128"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                  />
+                </svg>
+                <span class="fw-semibold fs-2">Project Three</span>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-md-6 d-flex flex-column">
+              <div class="card border-0 shadow-sm rounded-4">
+                <a
+                  href="/web/project-details/project4.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <img
+                    src="/src/assets/images/project4.jpg"
+                    class="card-img-top img-fluid"
+                    style="height: 320px; object-fit: cover"
+                    alt="Project One"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="d-flex align-items-center gap-3 mt-4 justify-content-center project-title"
+              >
+                <svg
+                  class="arrow-circle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 128 128"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                  />
+                </svg>
+                <span class="fw-semibold fs-2">Project Four</span>
               </div>
             </div>
           </div>
