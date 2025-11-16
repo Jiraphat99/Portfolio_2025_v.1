@@ -14,6 +14,13 @@ html {
   overflow-y: auto;
 }
 
+.container-fluid,
+.project-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* ===== FOOTER STYLING ===== */
 .footer {
   background-color: #111;
