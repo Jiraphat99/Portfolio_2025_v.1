@@ -76,16 +76,14 @@ html {
 
 /* ===== GALLERY ===== */
 .project-gallery img {
+  height: 300px;
+  object-fit: cover;
   width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .project-gallery img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== BACK BUTTON ===== */
@@ -475,5 +473,30 @@ html {
   .chaos-section {
     padding: 4rem 1.5rem;
     min-height: 60vh;
+  }
+}
+
+/* Force modal images to a consistent size */
+#galleryModal .carousel-item img {
+  height: 75vh; /* consistent height */
+  width: 100%; /* fill horizontally */
+  object-fit: contain; /* keep full image visible without cropping */
+  background: #000; /* optional: adds clean padding behind image */
+  border-radius: 20px;
+}
+
+.project-hero h1 {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
 }
