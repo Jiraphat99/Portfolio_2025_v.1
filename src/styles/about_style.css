@@ -1,3 +1,93 @@
+.skills-table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+  width: 100%;
+}
+.skills-table td {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  vertical-align: top;
+}
+.skills-table td.large {
+  height: 320px;
+  width: 50%;
+}
+.skills-table td.medium {
+  height: 240px;
+  width: 50%;
+}
+.skills-table td.small {
+  height: 180px;
+  width: 50%;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.badges span {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Timeline / Experience ---------- */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  border-left: 3px solid #dee2e6;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #0d6efd;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #0d6efd;
+}
+.timeline-date {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+.timeline-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.timeline-company {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.timeline-description {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -186,10 +276,17 @@ html {
   transition: all 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .nav-item:hover {
   transform: translateY(-5px) scale(1.1);
   color: #fff;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, #fff, #f0f0f0);
+  color: #000;
+  transform: translateY(-2px) scale(1.2);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3),
+    0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 .nav-item:hover::after {
@@ -308,11 +405,21 @@ html {
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3),
     0 0 12px rgba(255, 255, 255, 0.2);
 }
-
-/* === GLOBAL GRID ALIGNMENT === */
-:root {
-  --page-padding: clamp(3rem, 7vw, 6rem);
-  --column-gap: 2rem;
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 30, 0.9),
+    rgba(60, 60, 60, 0.6)
+  );
+  backdrop-filter: blur(12px);
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 
 section.about,

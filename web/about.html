@@ -12,19 +12,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="/src/styles/project-details-styles/about-style.css"
-    />
-    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/about_style.css" />
   </head>
   <body>
     <!-- Hero Section -->
     <section class="hero position-relative vh-100">
       <img
-        src="/src/assets/images/profile.jpg"
+        src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg"
         alt="Hero Background"
-        class="hero-bg position-absolute w-100 h-100"
+        class="hero-bg position-absolute w-100 h-100 object-fit-cover"
       />
       <div
         class="hero-overlay position-relative text-white h-100 d-flex flex-column justify-content-between"
@@ -50,114 +46,10 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <nav class="bottom-nav" aria-label="Primary">
-      <div class="nav-inner" role="tablist" aria-label="Quick actions">
-        <a
-          href="/index.html"
-          class="nav-item"
-          role="tab"
-          aria-selected="true"
-          title="Home"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-house"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
-            />
-          </svg>
-        </a>
-        <a
-          href="/web/projects.html"
-          class="nav-item"
-          role="tab"
-          aria-selected="false"
-          title="Projects"
-        >
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="false">
-            <rect
-              x="3"
-              y="3"
-              width="7"
-              height="7"
-              rx="1"
-              stroke="currentColor"
-              fill="none"
-              stroke-width="1.5"
-            />
-            <rect
-              x="14"
-              y="3"
-              width="7"
-              height="7"
-              rx="1"
-              stroke="currentColor"
-              fill="none"
-              stroke-width="1.5"
-            />
-            <rect
-              x="3"
-              y="14"
-              width="7"
-              height="7"
-              rx="1"
-              stroke="currentColor"
-              fill="none"
-              stroke-width="1.5"
-            />
-          </svg>
-        </a>
-        <a
-          href="/web/about.html"
-          class="nav-item active"
-          role="tab"
-          aria-selected="false"
-          title="About"
-        >
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="false">
-            <circle cx="12" cy="8" r="3" fill="currentColor" />
-            <path
-              d="M5 20c1.5-4 5.5-5 7-5s5.5 1 7 5"
-              stroke="currentColor"
-              stroke-width="1.5"
-              fill="none"
-              stroke-linecap="round"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://github.com/jirapat"
-          class="nav-item"
-          role="tab"
-          aria-selected="false"
-          title="GitHub"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-            />
-          </svg>
-        </a>
-      </div>
-    </nav>
-
     <!-- About Section -->
     <section class="about py-5 bg-white">
       <div class="container about-container">
-        <div class="row align-items-start gy-5">
+        <div class="row align-items-center gy-5">
           <div class="col-lg-6">
             <h1 class="display-1 fw-bold mb-4">Hi, I'm Jirapat</h1>
             <p class="fs-4 mb-3">
@@ -165,12 +57,6 @@
               creativity. I specialize in crafting simple, functional, and
               visually engaging digital experiences.
             </p>
-            <p class="fs-5 text-muted mb-3">
-              My journey in technology and design allows me to merge creativity
-              with functionality, ensuring that every project I work on is
-              visually stunning and technically robust.
-            </p>
-            <h2 class="fw-semibold mt-4">Hobbies & Interests</h2>
             <ul class="text-muted">
               <li>Coding Challenges & Hackathons</li>
               <li>UI/UX Design & Prototyping</li>
@@ -179,7 +65,7 @@
               <li>Learning new frameworks and tools</li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-center">
             <img
               src="/src/assets/images/profile.jpg"
               class="img-fluid rounded-4"
@@ -189,6 +75,7 @@
         </div>
       </div>
     </section>
+
     <!-- Skills Section -->
     <section class="skills py-5 bg-light">
       <div class="container">
@@ -212,11 +99,8 @@
                 >Programming Languages
               </h3>
               <div class="badges">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>SQL</span>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Python</span><span>SQL</span>
               </div>
             </td>
             <td class="medium">
@@ -225,10 +109,8 @@
                 Development
               </h3>
               <div class="badges">
-                <span>Bootstrap</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>REST APIs</span>
+                <span>Bootstrap</span><span>React</span><span>Node.js</span
+                ><span>REST APIs</span>
               </div>
             </td>
           </tr>
@@ -239,10 +121,8 @@
                 Tools
               </h3>
               <div class="badges">
-                <span>Figma</span>
-                <span>Adobe XD</span>
-                <span>Prototyping</span>
-                <span>Wireframes</span>
+                <span>Figma</span><span>Adobe XD</span><span>Prototyping</span
+                ><span>Wireframes</span>
               </div>
             </td>
             <td class="small" rowspan="2">
@@ -253,10 +133,8 @@
                 >Soft Skills
               </h3>
               <div class="badges">
-                <span>Problem Solving</span>
-                <span>Communication</span>
-                <span>Teamwork</span>
-                <span>Time Management</span>
+                <span>Problem Solving</span><span>Communication</span
+                ><span>Teamwork</span><span>Time Management</span>
               </div>
             </td>
           </tr>
@@ -266,9 +144,7 @@
                 <i class="bi bi-github fs-2 text-dark me-2"></i>Version Control
               </h3>
               <div class="badges">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Agile</span>
+                <span>Git</span><span>GitHub</span><span>Agile</span>
               </div>
             </td>
           </tr>
@@ -276,63 +152,218 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section py-5 bg-white">
-      <div class="container-fluid contact-container">
-        <div class="row">
-          <div class="col-lg-8">
-            <p class="fs-4 text-muted mb-3">That's all for now.</p>
-            <h1 class="display-1 fw-semibold lh-1 mb-3">
-              Got a project in mind?
-            </h1>
-            <h1 class="display-1 fw-semibold lh-1 mb-5">Let’s talk</h1>
+    <!-- Experience Section -->
+    <section class="experience py-5 bg-white">
+      <div class="container">
+        <h1 class="display-1 fw-semibold mb-4">Experience</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 – Present</div>
+            <h3 class="timeline-role">Front-End Developer</h3>
+            <p class="timeline-company text-muted">Tech Solutions Ltd.</p>
+            <p class="timeline-description">
+              Developing responsive web apps using React, Bootstrap, and modern
+              JavaScript frameworks. Collaborating with UX/UI designers to
+              implement intuitive interfaces.
+            </p>
           </div>
-        </div>
-
-        <div class="divider-line position-relative my-5">
-          <button class="get-in-touch-btn">Get in touch</button>
-        </div>
-
-        <div class="row contact-info text-muted">
-          <div class="col-md-3">
-            <p class="mb-1 small fw-semibold">Email:</p>
-            <p class="fs-5 text-dark">jiraphat_wonganan@gmail.com</p>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 – 2024</div>
+            <h3 class="timeline-role">UI/UX Designer</h3>
+            <p class="timeline-company text-muted">Creative Labs</p>
+            <p class="timeline-description">
+              Designed wireframes, prototypes, and high-fidelity UI for multiple
+              web and mobile projects. Focused on usability and user engagement.
+            </p>
           </div>
-          <div class="col-md-3">
-            <p class="mb-1 small fw-semibold">Phone</p>
-            <p class="fs-5 text-dark">(+91) 8248669086</p>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 – 2022</div>
+            <h3 class="timeline-role">Junior Developer</h3>
+            <p class="timeline-company text-muted">Innovatech Co.</p>
+            <p class="timeline-description">
+              Assisted in front-end development, maintained legacy codebases,
+              and contributed to full-stack projects using Python, JavaScript,
+              and SQL databases.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer / Chaos Section -->
-    <section class="chaos-section bg-black text-white py-5">
-      <div class="chaos-container">
-        <div class="chaos-text">
-          <p class="tagline">your friendly chaos creator</p>
-          <h1 class="name display-1">Jirapat</h1>
+    <!-- Certifications Section -->
+    <section class="certifications py-5 bg-light">
+      <div class="container">
+        <h1 class="display-1 fw-semibold mb-4">Certifications & Awards</h1>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center">
+              <h3 class="fw-semibold mb-2">AWS Certified Developer</h3>
+              <p class="text-muted">Amazon Web Services, 2023</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center">
+              <h3 class="fw-semibold mb-2">Google UX Design</h3>
+              <p class="text-muted">Google, 2022</p>
+            </div>
+          </div>
         </div>
-        <a
-          href="mailto:jiraphat_wonganan@gmail.com"
-          class="arrow-btn"
-          aria-label="Get in touch"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            class="arrow-icon"
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects py-5 bg-white">
+      <div class="container">
+        <h1 class="display-1 fw-semibold mb-4">Selected Projects</h1>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card rounded-4 shadow-sm">
+              <img
+                src="/src/assets/images/project1.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Portfolio Website</h3>
+                <p class="text-muted">HTML, CSS, JS, Bootstrap</p>
+                <a href="/web/projects.html" class="btn btn-primary btn-sm"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom centered nav -->
+    <nav class="bottom-nav" aria-label="Primary">
+      <div class="nav-inner" role="tablist" aria-label="Quick actions">
+        <button class="nav-item" role="tab" aria-selected="false" title="Home">
+          <a
+            href="/index.html"
+            class="nav-item active"
+            role="tab"
+            aria-selected="true"
+            title="Home"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-house"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+              />
+            </svg>
+          </a>
+        </button>
+        <button
+          class="nav-item"
+          role="tab"
+          aria-selected="false"
+          title="Projects"
+        >
+          <a
+            href="/web/projects.html"
+            class="nav-item"
+            role="tab"
+            aria-selected="true"
+            title="Projects"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <rect
+                x="3"
+                y="3"
+                width="7"
+                height="7"
+                rx="1"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+              />
+              <rect
+                x="14"
+                y="3"
+                width="7"
+                height="7"
+                rx="1"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+              />
+              <rect
+                x="3"
+                y="14"
+                width="7"
+                height="7"
+                rx="1"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </button>
+        <button class="nav-item" role="tab" aria-selected="false" title="About">
+          <a href="/web/about.html"></a>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="8" r="3" fill="currentColor" />
             <path
-              fill-rule="evenodd"
-              d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708z"
+              d="M5 20c1.5-4 5.5-5 7-5s5.5 1 7 5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
             />
           </svg>
-        </a>
+        </button>
+
+        <button
+          class="nav-item"
+          role="tab"
+          aria-selected="false"
+          title="GitHub"
+        >
+          <a href="https://github.com/Jiraphat99">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+          </a>
+        </button>
       </div>
-    </section>
+    </nav>
+
+    <!-- Contact Section -->
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/src/scripts/script.js"></script>
+    <script src="src/scripts/script.js"></script>
+    <script>
+      fetch("/src/components/navComponent.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+
+      fetch("/src/components/footerComponent.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

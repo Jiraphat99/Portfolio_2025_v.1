@@ -158,6 +158,10 @@ html {
   position: relative;
 }
 
+.nav-item a {
+  color: inherit;
+}
+
 .nav-item svg {
   width: 22px;
   height: 22px;
