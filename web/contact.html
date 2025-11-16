@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Jirapat Wonganan</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/src/styles/contact_style.css" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section class="hero position-relative vh-100">
+      <img
+        src="https://images.pexels.com/photos/3182766/pexels-photo-3182766.jpeg"
+        alt="Hero Background"
+        class="hero-bg position-absolute w-100 h-100 object-fit-cover"
+      />
+
+      <div
+        class="hero-overlay text-white h-100 d-flex flex-column justify-content-between"
+      >
+        <p class="credit position-absolute fs-5 top-0 start-0 m-3">
+          @ Code by Jirapat
+        </p>
+
+        <p
+          class="description fs-5 fw-thin position-absolute top-0 end-0 m-3 text-end"
+        >
+          Let's turn your ideas into polished, user-focused digital experiences.
+        </p>
+
+        <h1 class="main-title text-center display-1 fw-bold">
+          <span id="loop-text">Contact</span>
+        </h1>
+
+        <button
+          class="circle-btn align-self-center mb-5"
+          aria-label="Next section"
+        >
+          <span aria-hidden="true">&#8599;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5 bg-white">
+      <div class="container-fluid contact-container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="fs-4 text-muted mb-3">Let’s begin something exciting.</p>
+            <h1 class="display-1 fw-semibold lh-1 mb-3">Have a project?</h1>
+            <h1 class="display-1 fw-semibold lh-1 mb-5">Reach out</h1>
+          </div>
+        </div>
+
+        <!-- Divider with Circle Button -->
+        <div class="divider-line position-relative my-5">
+          <button class="get-in-touch-btn">Message me</button>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row contact-info text-muted mb-5">
+          <div class="col-md-3">
+            <p class="mb-1 small fw-semibold">Email</p>
+            <p class="fs-5 text-dark">jiraphat_wonganan@gmail.com</p>
+          </div>
+
+          <div class="col-md-3">
+            <p class="mb-1 small fw-semibold">Phone</p>
+            <p class="fs-5 text-dark">(+91) 8248669086</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row mt-5">
+          <div class="col-lg-7">
+            <form class="contact-form">
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Message</label>
+                <textarea
+                  rows="5"
+                  class="form-control form-control-lg"
+                  placeholder="Tell me about your project…"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="btn btn-dark btn-lg px-5 mt-3">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="nav-placeholder"></div>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      fetch("/src/components/footerComponent.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <script>
+      fetch("/src/components/navComponent.html")
+        .then((res) => res.text())
+        .then(
+          (data) =>
+            (document.getElementById("nav-placeholder").innerHTML = data)
+        );
+    </script>
+  </body>
+</html>
