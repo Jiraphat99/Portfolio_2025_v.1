@@ -14,15 +14,6 @@ html {
   overflow-y: auto;
 }
 
-/* ===== CONTAINER UTILITY ===== */
-.container,
-.container-fluid {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding-left: var(--page-padding, 3rem);
-  padding-right: var(--page-padding, 3rem);
-}
-
 /* ===== FOOTER STYLING ===== */
 .footer {
   background-color: #111;
