@@ -1,10 +1,9 @@
-<!-- /templates/base.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project 1 | Jirapat Wonganan</title>
+    <title>AI Thai Poem Generator | Jirapat Wonganan</title>
 
     <!-- Bootstrap + Global CSS -->
     <link
@@ -20,177 +19,127 @@
       href="/src/styles/project-details-styles/project1-styles.css"
     />
     <link rel="stylesheet" href="/src/styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
   </head>
 
   <body>
     <!-- Hero Section -->
     <section class="project-hero py-5">
       <img
-        src="/src/assets/images/project4.jpg"
+        src="/src/assets/images/thaipoemgenerator-banner.png"
         alt="Hero Background"
         class="hero-bg position-absolute w-100 h-100"
       />
-      <h1>Project Title</h1>
+      <h1>AI Thai Poem Generator</h1>
     </section>
 
-    <!-- Page Content (injected per page) -->
+    <!-- Page Content -->
     <main class="container">
+      <!-- Overview -->
       <section class="projects py-5 bg-white">
         <div class="container project-container">
-          <!-- Project Description -->
           <div class="row align-items-start g-3 mb-5">
             <div class="col-lg">
               <h2 class="fw-semibold display-5 h5 mb-4">Overview</h2>
               <p class="fs-5 text-muted mb-0">
-                A responsive e-commerce platform allowing users to browse,
-                order, and track products in real-time.
+                The AI Thai Poem Generator uses the SheCodes AI API to create
+                original Thai poems based on user-provided keywords or themes.
+                It helps users explore creative writing and generate beautiful,
+                culturally rich content instantly.
               </p>
               <br />
-              <p class="fs-5 text-muted mb-0">
-                My Role: Frontend Developer, UI/UX Designer
-              </p>
+              <p class="fs-5 text-muted mb-0">My Role: Frontend Developer</p>
               <br />
               <p class="fs-5 text-muted mb-0">
-                Tools Used: ReactJS · Node.js · MongoDB · Bootstrap
+                Tools Used: HTML · CSS · JavaScript · SheCodes AI API
               </p>
             </div>
           </div>
 
+          <!-- Highlights -->
           <div class="row align-items-start g-3 mb-5">
             <div class="col-lg">
               <h2 class="fw-semibold display-5 h5 mb-4">Highlights</h2>
               <ul class="fs-5 text-muted mb-0">
                 <li>
-                  Implemented product filtering and search functionality with
-                  optimized performance.
+                  Generates Thai poems in real-time using the SheCodes AI API.
+                </li>
+                <li>Users can input keywords or themes to customize poems.</li>
+                <li>Displays generated poems in a clean, readable layout.</li>
+                <li>
+                  Fast, interactive, and responsive interface across devices.
                 </li>
                 <li>
-                  Designed responsive product pages for mobile and desktop
-                  devices.
+                  Encourages creativity and exploration of Thai literature.
                 </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="row align-items-start g-3 mb-5">
+            <div class="col-lg">
+              <h2 class="fw-semibold display-5 h5 mb-4">Tech Stack</h2>
+              <ul class="fs-5 text-muted mb-0">
+                <li>HTML5 for semantic structure</li>
+                <li>CSS3 for responsive layout and styling</li>
                 <li>
-                  Integrated secure payment gateway APIs and order tracking
-                  features.
+                  Vanilla JavaScript for DOM manipulation and API integration
                 </li>
-                <li>
-                  Enhanced user experience with interactive animations and
-                  real-time updates.
-                </li>
+                <li>SheCodes AI API for poem generation</li>
+                <li>Netlify for hosting and deployment</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- GALLERY SECTION -->
-      <section class="projects py-5">
-        <div class="container project-container">
-          <div class="row g-4">
-            <!-- Image 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-                class="img-fluid rounded-4 gallery-img"
-                style="height: 300px; object-fit: cover; cursor: pointer"
-                data-bs-toggle="modal"
-                data-bs-target="#galleryModal"
-                data-bs-slide-to="0"
-                alt="Table Full of Spices"
-              />
-            </div>
-            <!-- Image 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
-                class="img-fluid rounded-4 gallery-img"
-                style="height: 300px; object-fit: cover; cursor: pointer"
-                data-bs-toggle="modal"
-                data-bs-target="#galleryModal"
-                data-bs-slide-to="1"
-                alt="Winter Landscape"
-              />
-            </div>
-            <!-- Image 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
-                class="img-fluid rounded-4 gallery-img"
-                style="height: 300px; object-fit: cover; cursor: pointer"
-                data-bs-toggle="modal"
-                data-bs-target="#galleryModal"
-                data-bs-slide-to="2"
-                alt="View of the City in the Mountains"
-              />
-            </div>
+      <!-- Live Preview -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="fw-semibold display-5 h5 mb-4">Live Preview</h2>
+          <div class="ratio ratio-16x9 border rounded-4 shadow-sm">
+            <iframe
+              src="https://thaipoemsgenerator.netlify.app/"
+              style="border: 0; border-radius: 20px"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center mt-3">
+            <a
+              href="https://thaipoemsgenerator.netlify.app/"
+              target="_blank"
+              class="btn btn-dark rounded-pill px-4 py-2"
+            >
+              Open Full Site
+            </a>
           </div>
         </div>
+      </section>
 
-        <!-- MODAL -->
-        <div
-          class="modal fade"
-          id="galleryModal"
-          tabindex="-1"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent border-0">
-              <div
-                id="carouselGallery"
-                class="carousel slide"
-                data-bs-ride="carousel"
+      <!-- Gallery Section -->
+      <section class="projects py-5">
+        <div class="container project-container">
+          <div class="row g-4 justify-content-center project-gallery">
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="/src/assets/images/thaipoemgenerator.png"
+                class="glightbox"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                      class="d-block w-100 rounded-4"
-                      alt="Table Full of Spices"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
-                      class="d-block w-100 rounded-4"
-                      alt="Winter Landscape"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
-                      class="d-block w-100 rounded-4"
-                      alt="View of the City in the Mountains"
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselGallery"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselGallery"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <img
+                  src="/src/assets/images/thaipoemgenerator.png"
+                  class="img-fluid rounded-4"
+                  alt="AI Thai Poem Generator Screenshot"
+                />
+              </a>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Back Button -->
       <div class="text-start mb-5 text-center">
         <button class="back-btn" onclick="location.href='/web/projects.html'">
@@ -200,13 +149,12 @@
     </main>
 
     <div id="nav-placeholder"></div>
-
-    <!-- Footer Component -->
     <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
+      // Load nav & footer components
       fetch("/src/components/footerComponent.html")
         .then((res) => res.text())
         .then((data) => (document.getElementById("footer").innerHTML = data));
@@ -215,29 +163,22 @@
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
-
-          // NOW nav exists → run highlight
           const current = window.location.pathname;
-
           document.querySelectorAll(".bottom-nav .nav-item").forEach((item) => {
             const href = item.getAttribute("href");
-
             if (!href || href.startsWith("http")) return;
-
-            // Normalize paths
             const cleanHref = href
               .replace(/\/index\.html/, "/")
               .replace(/\/$/, "");
-
             const cleanCurrent = current
               .replace(/\/index\.html/, "/")
               .replace(/\/$/, "");
-
-            if (cleanCurrent === cleanHref) {
-              item.classList.add("active");
-            }
+            if (cleanCurrent === cleanHref) item.classList.add("active");
           });
         });
+
+      // GLightbox initialization
+      const lightbox = GLightbox({ selector: ".glightbox" });
     </script>
   </body>
 </html>
