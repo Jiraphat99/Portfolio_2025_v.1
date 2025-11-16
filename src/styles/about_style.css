@@ -276,17 +276,10 @@ html {
   transition: all 0.3s ease;
 }
 
+/* HOVER EFFECT */
 .nav-item:hover {
   transform: translateY(-5px) scale(1.1);
   color: #fff;
-}
-
-.nav-item.active {
-  background: linear-gradient(135deg, #fff, #f0f0f0);
-  color: #000;
-  transform: translateY(-2px) scale(1.2);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3),
-    0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 .nav-item:hover::after {
@@ -405,25 +398,14 @@ html {
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3),
     0 0 12px rgba(255, 255, 255, 0.2);
 }
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  background: linear-gradient(
-    135deg,
-    rgba(30, 30, 30, 0.9),
-    rgba(60, 60, 60, 0.6)
-  );
-  backdrop-filter: blur(12px);
-  padding: 12px 18px;
-  border-radius: 50px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
+
+/* === GLOBAL GRID ALIGNMENT === */
+:root {
+  --page-padding: clamp(3rem, 7vw, 6rem);
+  --column-gap: 2rem;
 }
 
-section.about,
-section.projects {
+section {
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
 }

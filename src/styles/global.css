@@ -14,6 +14,13 @@ html {
   overflow-y: auto;
 }
 
+.container-fluid,
+.project-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* ===== FOOTER STYLING ===== */
 .footer {
   background-color: #111;
@@ -35,4 +42,68 @@ html {
 
 .footer p {
   margin-top: 0.5rem;
+}
+
+/* Make contact social icons behave like nav items */
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111; /* dark icon */
+  font-size: 22px;
+  transition: all 0.3s ease, transform 0.25s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #3d5afe; /* accent color like your Get-in-Touch button */
+}
+
+.social-icon:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #3d5afe;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(61, 90, 254, 0.6);
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+/* Reuse bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-4px);
+  }
+}
+
+/* Responsive like nav */
+@media (max-width: 992px) {
+  .social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #3d5afe;
+  text-decoration: none;
 }

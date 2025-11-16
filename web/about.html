@@ -35,7 +35,9 @@
           Passionate Creative Designer and Developer, dedicated to crafting
           innovative solutions and exceptional digital experiences.
         </p>
-        <h1 class="main-title text-center display-1 fw-bold">
+        <h1
+          class="main-title text-center fw-bold display-1 display-md-2 display-sm-3"
+        >
           <span id="loop-text">About Me</span>
         </h1>
         <button
@@ -48,8 +50,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="about py-5 bg-white">
-      <div class="container about-container">
+    <section class="py-5 bg-white">
+      <div class="container-fluid about-container">
         <div class="row align-items-center gy-5">
           <div class="col-lg-6">
             <h1 class="display-1 fw-bold mb-4">Hi, I'm Jirapat</h1>
@@ -78,8 +80,8 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills py-5 bg-light">
-      <div class="container">
+    <section class="py-5 bg-light">
+      <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-lg-8">
             <h1 class="display-1 fw-semibold">Skills & Expertise</h1>
@@ -92,70 +94,51 @@
           </div>
         </div>
 
-        <table class="skills-table w-100">
-          <tr>
-            <td class="large">
-              <h3>
-                <i class="bi bi-code-slash fs-2 text-primary me-2"></i
-                >Programming Languages
-              </h3>
-              <div class="badges">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span
-                ><span>Python</span><span>SQL</span>
-              </div>
-            </td>
-            <td class="medium">
-              <h3>
-                <i class="bi bi-bootstrap fs-2 text-info me-2"></i>Web
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm rounded-4 p-3 text-center">
+              <h5 class="fw-semibold mb-3">
+                <i class="bi bi-code-slash fs-3 text-primary me-2"></i
+                >Programming
+              </h5>
+              <p>HTML, CSS, JavaScript, Python, SQL</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm rounded-4 p-3 text-center">
+              <h5 class="fw-semibold mb-3">
+                <i class="bi bi-bootstrap fs-3 text-info me-2"></i>Web
                 Development
-              </h3>
-              <div class="badges">
-                <span>Bootstrap</span><span>React</span><span>Node.js</span
-                ><span>REST APIs</span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="medium">
-              <h3>
-                <i class="bi bi-brush fs-2 text-warning me-2"></i>UI/UX & Design
-                Tools
-              </h3>
-              <div class="badges">
-                <span>Figma</span><span>Adobe XD</span><span>Prototyping</span
-                ><span>Wireframes</span>
-              </div>
-            </td>
-            <td class="small" rowspan="2">
-              <h3>
+              </h5>
+              <p>Bootstrap, React, Node.js, REST APIs</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm rounded-4 p-3 text-center">
+              <h5 class="fw-semibold mb-3">
+                <i class="bi bi-brush fs-3 text-warning me-2"></i>UI/UX & Design
+              </h5>
+              <p>Figma, Adobe XD, Prototyping, Wireframes</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm rounded-4 p-3 text-center">
+              <h5 class="fw-semibold mb-3">
                 <i
-                  class="bi bi-lightning-charge-fill fs-2 text-success me-2"
+                  class="bi bi-lightning-charge-fill fs-3 text-success me-2"
                 ></i
                 >Soft Skills
-              </h3>
-              <div class="badges">
-                <span>Problem Solving</span><span>Communication</span
-                ><span>Teamwork</span><span>Time Management</span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="small">
-              <h3>
-                <i class="bi bi-github fs-2 text-dark me-2"></i>Version Control
-              </h3>
-              <div class="badges">
-                <span>Git</span><span>GitHub</span><span>Agile</span>
-              </div>
-            </td>
-          </tr>
-        </table>
+              </h5>
+              <p>Problem Solving, Communication, Teamwork, Time Management</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="experience py-5 bg-white">
-      <div class="container">
+    <section class="py-5 bg-white">
+      <div class="container-fluid">
         <h1 class="display-1 fw-semibold mb-4">Experience</h1>
         <div class="timeline">
           <div class="timeline-item">
@@ -190,50 +173,138 @@
         </div>
       </div>
     </section>
-
     <!-- Certifications Section -->
-    <section class="certifications py-5 bg-light">
-      <div class="container">
+    <section class="py-5 bg-light">
+      <div class="container-fluid">
         <h1 class="display-1 fw-semibold mb-4">Certifications & Awards</h1>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card shadow-sm rounded-4 p-4 text-center">
-              <h3 class="fw-semibold mb-2">AWS Certified Developer</h3>
-              <p class="text-muted">Amazon Web Services, 2023</p>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">CompTIA Security+</h3>
+              <p class="text-muted">Global, 2024 (Planned)</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card shadow-sm rounded-4 p-4 text-center">
-              <h3 class="fw-semibold mb-2">Google UX Design</h3>
-              <p class="text-muted">Google, 2022</p>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">Cisco CyberOps Associate</h3>
+              <p class="text-muted">Cisco, 2024 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">Certified Ethical Hacker (CEH)</h3>
+              <p class="text-muted">EC-Council, 2024 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">CompTIA PenTest+</h3>
+              <p class="text-muted">Global, 2025 (Planned)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm rounded-4 p-4 text-center h-100">
+              <h3 class="fw-semibold mb-2">GIAC Security Essentials (GSEC)</h3>
+              <p class="text-muted">GIAC, 2025 (Planned)</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects py-5 bg-white">
-      <div class="container">
-        <h1 class="display-1 fw-semibold mb-4">Selected Projects</h1>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card rounded-4 shadow-sm">
-              <img
-                src="/src/assets/images/project1.jpg"
-                class="card-img-top"
-                alt="Project 1"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Portfolio Website</h3>
-                <p class="text-muted">HTML, CSS, JS, Bootstrap</p>
-                <a href="/web/projects.html" class="btn btn-primary btn-sm"
-                  >View Project</a
-                >
+    <section class="py-5 bg-white">
+      <div class="container-fluid">
+        <h1 class="display-4 fw-semibold mb-5 text-center">
+          Award-Winning Projects
+        </h1>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Project Card -->
+          <div class="col-md-6 col-lg-4">
+            <a
+              href="/web/project-details/project1.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card shadow-sm rounded-4 overflow-hidden h-100">
+                <img
+                  src="/src/assets/images/project1.jpg"
+                  class="card-img-top"
+                  style="height: 220px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <svg
+                    width="28"
+                    class="me-2 opacity-50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
+                    <path
+                      d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                    />
+                  </svg>
+                  <h5 class="fw-semibold mt-2">Project One</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <!-- Add more project cards as needed -->
+
+          <!-- Copy/paste for Project 2–4 -->
+          <div class="col-md-6 col-lg-4">
+            <a
+              href="/web/project-details/project2.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card shadow-sm rounded-4 overflow-hidden h-100">
+                <img
+                  src="/src/assets/images/project2.jpg"
+                  class="card-img-top"
+                  style="height: 220px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <svg
+                    width="28"
+                    class="me-2 opacity-50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
+                    <path
+                      d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                    />
+                  </svg>
+                  <h5 class="fw-semibold mt-2">Project Two</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <a
+              href="/web/project-details/project3.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card shadow-sm rounded-4 overflow-hidden h-100">
+                <img
+                  src="/src/assets/images/project3.jpg"
+                  class="card-img-top"
+                  style="height: 220px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <svg
+                    width="28"
+                    class="me-2 opacity-50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
+                    <path
+                      d="m68.4 33.5-3.8 3.8L89.2 62H24.1v5.3h64.3l-23.8 24 3.8 3.8 30.7-30.8-.1-.1.1-.1-30.7-30.6zM64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7 32.3 0 58.6 26.3 58.6 58.7-.1 32.4-26.3 58.7-58.6 58.7z"
+                    />
+                  </svg>
+                  <h5 class="fw-semibold mt-2">Project Three</h5>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -255,19 +326,15 @@
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
 
-          // NOW nav exists → run highlight
           const current = window.location.pathname;
 
           document.querySelectorAll(".bottom-nav .nav-item").forEach((item) => {
             const href = item.getAttribute("href");
-
             if (!href || href.startsWith("http")) return;
 
-            // Normalize paths
             const cleanHref = href
               .replace(/\/index\.html/, "/")
               .replace(/\/$/, "");
-
             const cleanCurrent = current
               .replace(/\/index\.html/, "/")
               .replace(/\/$/, "");
